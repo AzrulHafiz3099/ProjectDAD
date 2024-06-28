@@ -1,16 +1,47 @@
 **Application Involve**
 
+**Insert Application**
 Insert App
 - Let the user to Insert new equipment into the database
 
-Rent App
-- Let the user to Search and Update the equipment
-  
-**Insert Application**
+**Layer Diagram**
 
+![diagram drawio](https://github.com/AzrulHafiz3099/ProjectDAD/assets/165458463/4f1cf943-1c09-47a1-b831-481a531a04dd)
+
+1.User Interface Layer:
+User Interface: 
+
+Components like JFrame, JTextField, and JButton are used to create the GUI.
+
+2.Middleware Layer:
+
+REST API
+
+Endpoint: POST /saveDataInventory.php Receives inventory data (name and type) from the client, processes it, and saves it to the database.
+
+Data Processing: Processes the incoming data using PHP. Receives data from the client application (UI). Processes and validates the received data.
+
+Database Interaction: Interacts with the MySQL database and executes the SQL INSERT query to save the data, and sends a response back to the client.
+
+
+3.Database Layer:
+
+Database projectdad
+
+Table: equipment
+
+Columns: name (Name of the equipment item) and type (Type of the equipment item).
+
+•Function/features:
+
+-Add inventory item using endpoint 'POST /saveDataInventory.php' 
+
+-Function to accept name and type parameters, validates them and insert it into the 'inventory' table in database
 
 
 **Rent Application**
+Rent App
+- Let the user to Search and Update the equipment
 
 **Layer Diagram**
 
