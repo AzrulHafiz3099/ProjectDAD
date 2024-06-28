@@ -1,3 +1,15 @@
+**Application Involve**
+
+Insert App
+- Let the user to Insert new equipment into the database
+
+Rent App
+- Let the user to Search and Update the equipment
+  
+**Insert Application**
+
+
+
 **Rent Application**
 
 **Layer Diagram**
@@ -83,3 +95,17 @@ Error Handling:
 
 - Catches and handles IO exceptions during server communication.
 - Displays appropriate error messages to the user in case of communication failures.
+
+
+**Database Involve**
+
+Database Name = projectdad
+Table Name = equipment
+
+Data dictionary
+----------------------------
+| ID      | int (100)      | 
+| name    | Varchar (100)  |
+| type    | Varchar (100)  |
+| status  | Varchar (100)  |
+----------------------------
