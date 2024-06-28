@@ -1,6 +1,7 @@
 **Application Involve**
 
-**Insert Application**
+**1) Insert Application**
+
 Insert App
 - Let the user to Insert new equipment into the database
 
@@ -11,35 +12,37 @@ Insert App
 1.User Interface Layer:
 User Interface: 
 
-Components like JFrame, JTextField, and JButton are used to create the GUI.
+- Components like JFrame, JTextField, and JButton are used to create the GUI.
 
 2.Middleware Layer:
 
 REST API
 
-Endpoint: POST /saveDataInventory.php Receives inventory data (name and type) from the client, processes it, and saves it to the database.
+- Endpoint: `POST /saveDataInventory.php` Receives inventory data (name and type) from the client, processes it, and saves it to the database.
 
-Data Processing: Processes the incoming data using PHP. Receives data from the client application (UI). Processes and validates the received data.
+- Data Processing: Processes the incoming data using PHP. Receives data from the client application (UI). Processes and validates the received data.
 
-Database Interaction: Interacts with the MySQL database and executes the SQL INSERT query to save the data, and sends a response back to the client.
+- Database Interaction: Interacts with the MySQL database and executes the SQL INSERT query to save the data, and sends a response back to the client.
 
 
 3.Database Layer:
 
-Database projectdad
+- Database projectdad
 
-Table: equipment
+- Table: equipment
 
-Columns: name (Name of the equipment item) and type (Type of the equipment item).
+- Columns: name (Name of the equipment item) and type (Type of the equipment item).
 
-•Function/features:
+**Functions/Features in the Middleware**
 
--Add inventory item using endpoint 'POST /saveDataInventory.php' 
+- Add equipment item using endpoint `POST /saveDataInventory.php`
 
--Function to accept name and type parameters, validates them and insert it into the 'inventory' table in database
+- Function to accept name and type parameters, validates them and insert it into the 'equipment' table in database
 
 
-**Rent Application**
+
+**2) Rent Application**
+
 Rent App
 - Let the user to Search and Update the equipment
 
